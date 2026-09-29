@@ -8,7 +8,7 @@ export class TodoModel {
   @Field(() => String)
   title!: string;
 
-  @Field(() => String)
+  @Field(() => String, { nullable: true })
   description!: string;
 
   @Field(() => Boolean)
